@@ -8,6 +8,7 @@ import { scrape as huggingface } from './huggingface.js';
 import { scrape as cloudflare } from './cloudflare-workers-ai.js';
 import { scrape as gpt4free } from './gpt4free-providers.js';
 import { scrape as awesomeFreeAi } from './awesome-free-ai.js';
+import { scrape as publicBots } from './public-bots.js';
 
 import type { RawEndpoint } from '../types.js';
 import { config } from '../config.js';
@@ -24,6 +25,7 @@ const scrapers = [
   { name: 'cloudflare-workers-ai', fn: cloudflare },
   { name: 'gpt4free-providers', fn: gpt4free },
   { name: 'awesome-free-ai', fn: awesomeFreeAi },
+  { name: 'public-bots', fn: publicBots },
 ];
 
 export async function scrapeAll(): Promise<RawEndpoint[]> {

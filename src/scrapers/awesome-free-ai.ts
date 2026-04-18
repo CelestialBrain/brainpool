@@ -12,6 +12,14 @@ const SOURCES = [
   // Community-curated free AI lists. Treated as leads, not ground truth.
   'https://raw.githubusercontent.com/cheahjs/free-llm-api-resources/main/README.md',
   'https://raw.githubusercontent.com/zukixa/cool-ai-stuff/main/README.md',
+  'https://raw.githubusercontent.com/wdhdev/free-for-life/main/README.md',
+  'https://raw.githubusercontent.com/steven2358/awesome-generative-ai/main/README.md',
+  'https://raw.githubusercontent.com/eudk/awesome-ai-tools/main/README.md',
+  'https://raw.githubusercontent.com/neon-mmd/awesome-ai-tools/main/README.md',
+  'https://raw.githubusercontent.com/ChatGPTNextWeb/ChatGPT-Next-Web/main/README.md',
+  'https://raw.githubusercontent.com/lobehub/lobe-chat/main/README.md',
+  'https://raw.githubusercontent.com/Rizelokaba/gpt4free-ts/main/README.md',
+  'https://raw.githubusercontent.com/xtekky/gpt4free/main/README.md',
 ];
 
 const URL_RE = /https?:\/\/[a-z0-9.-]+(?:\:[0-9]+)?\/(?:v1|openai|api)[^\s"'`)\]]*/gi;

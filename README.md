@@ -11,7 +11,9 @@
 
 **Global free AI API endpoint pool. Self-maintaining, aggregated, open.**
 
-Brainpool aggregates free AI endpoints from 7+ sources (5 legitimate free-tier providers + 2 gray-market meta-sources), validates every one for liveness, model identity, latency, and rate-limit state, then exports curated lists and serves them via an OpenAI-compatible REST API with failover routing. Runs every 20 minutes on GitHub Actions using 12 parallel validation runners.
+Brainpool aggregates free AI endpoints from 5 legitimate free-tier providers (OpenRouter, Groq, Google AI Studio, Huggingface, Cloudflare Workers AI), validates every one for liveness, model identity, latency, and rate-limit state, then exports curated lists and serves them via an OpenAI-compatible REST API with failover routing. Runs every 20 minutes on GitHub Actions using 12 parallel validation runners.
+
+> **v1 scope:** only `tier=official` scrapers are active. Gray-market scrapers (`gpt4free-providers`, `awesome-free-ai`) live in the codebase but are commented out in [`src/scrapers/index.ts`](src/scrapers/index.ts). They will be re-enabled in a separate throwaway-account fork — see [docs/SECURITY.md](docs/SECURITY.md) for why.
 
 ---
 
@@ -19,7 +21,7 @@ Brainpool aggregates free AI endpoints from 7+ sources (5 legitimate free-tier p
 
 ```
 SCRAPE (1 runner, ~15s)
-  7+ sources → dedup → inject alive endpoints from DB → blacklist dead
+  5 sources → dedup → inject alive endpoints from DB → blacklist dead
     │
     ├── SHARD 0  ──┐
     ├── SHARD 1    │
@@ -48,14 +50,14 @@ Counts from latest pipeline run (auto-updated).
 | Huggingface Inference | Curated set of serverless text-gen models | `HUGGINGFACE_TOKEN` |
 | Cloudflare Workers AI | Text-generation models under `@cf/` | `CLOUDFLARE_API_TOKEN` + `CLOUDFLARE_ACCOUNT_ID` |
 
-### Gray-market meta-sources (`tier=reverse`)
+### Gray-market meta-sources (disabled in v1)
 
 | Source | What it provides |
 |--------|------------------|
 | gpt4free-providers | Base URLs extracted from `xtekky/gpt4free`'s `g4f/Provider/` directory |
 | awesome-free-ai | URLs scraped from community-curated free-AI README files (cheahjs, zukixa) |
 
-Gray-market endpoints are probed on every run. Ones that respond are promoted into the live pool; ones that consistently fail fall into the blacklist window.
+Code remains in `src/scrapers/` but is commented out in the scraper registry. Re-enable in a forked repo hosted under a throwaway account if you want the full gpt4free-style experience.
 
 ---
 
@@ -193,7 +195,7 @@ npm start                  # API server
 
 3-phase pipeline across 14 runners, every 20 minutes:
 
-1. **Scrape** (1 runner, ~15s) — 7+ sources, dedup by `endpoint_id`, inject alive endpoints from DB, blacklist dead, upload artifact
+1. **Scrape** (1 runner, ~15s) — 5 sources, dedup by `endpoint_id`, inject alive endpoints from DB, blacklist dead, upload artifact
 2. **Validate** (12 runners in parallel, ~3-20 min) — 20 concurrency, hard timeouts, model-detect probe, streams to JSONL
 3. **Merge** (1 runner, ~15s) — combine shards, upsert SQLite, export, commit
 

@@ -6,8 +6,10 @@ import { scrape as groq } from './groq.js';
 import { scrape as googleAiStudio } from './google-ai-studio.js';
 import { scrape as huggingface } from './huggingface.js';
 import { scrape as cloudflare } from './cloudflare-workers-ai.js';
-import { scrape as gpt4free } from './gpt4free-providers.js';
-import { scrape as awesomeFreeAi } from './awesome-free-ai.js';
+// Gray-tier scrapers (tier=reverse) — quarantined for a separate fork.
+// Re-enable by uncommenting in a throwaway repo; see docs/SECURITY.md.
+// import { scrape as gpt4free } from './gpt4free-providers.js';
+// import { scrape as awesomeFreeAi } from './awesome-free-ai.js';
 
 import type { RawEndpoint } from '../types.js';
 import { config } from '../config.js';
@@ -22,8 +24,8 @@ const scrapers = [
   { name: 'google-ai-studio', fn: googleAiStudio },
   { name: 'huggingface', fn: huggingface },
   { name: 'cloudflare-workers-ai', fn: cloudflare },
-  { name: 'gpt4free-providers', fn: gpt4free },
-  { name: 'awesome-free-ai', fn: awesomeFreeAi },
+  // { name: 'gpt4free-providers', fn: gpt4free },
+  // { name: 'awesome-free-ai', fn: awesomeFreeAi },
 ];
 
 export async function scrapeAll(): Promise<RawEndpoint[]> {

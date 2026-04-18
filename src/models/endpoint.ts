@@ -265,6 +265,22 @@ export function getPreviouslyAliveEndpoints(): Array<{
   `).all() as ReturnType<typeof getPreviouslyAliveEndpoints>;
 }
 
+/** Return ALL endpoints ever stored — alive, dead, rate-limited, everything. */
+export function queryAllEver(): EndpointResponse[] {
+  const db = getDb();
+  const rows = db.prepare(`SELECT * FROM endpoint ORDER BY last_checked DESC`).all() as EndpointRow[];
+  return rows.map(rowToResponse);
+}
+
+/** Return only rate-limited endpoints — useful for the rate-limited export. */
+export function queryRateLimited(): EndpointResponse[] {
+  const db = getDb();
+  const rows = db.prepare(
+    `SELECT * FROM endpoint WHERE rate_limited = 1 ORDER BY last_checked DESC`,
+  ).all() as EndpointRow[];
+  return rows.map(rowToResponse);
+}
+
 export function getRecentlyDeadEndpointIds(withinSec: number): Set<string> {
   const db = getDb();
   const cutoff = Math.floor(Date.now() / 1000) - withinSec;

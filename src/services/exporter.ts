@@ -6,6 +6,8 @@ import { mkdir, writeFile, readFile } from 'fs/promises';
 import { join } from 'path';
 import {
   queryEndpoint,
+  queryAllEver,
+  queryRateLimited,
   getStats,
   getSourceQuality,
 } from '../models/endpoint.js';
@@ -97,7 +99,9 @@ export async function exportFiles(): Promise<void> {
     ensureDir(byTierDir),
   ]);
 
-  const all = queryEndpoint({ alive_only: true, limit: 100_000 });
+  const alive = queryEndpoint({ alive_only: true, limit: 100_000 });
+  const all = queryAllEver();
+  const rateLimited = queryRateLimited();
   const official = queryEndpoint({ tier: 'official', alive_only: true, limit: 100_000 });
   const reverse = queryEndpoint({ tier: 'reverse', alive_only: true, limit: 100_000 });
 
@@ -117,6 +121,8 @@ export async function exportFiles(): Promise<void> {
 
   await Promise.all([
     writeFile(join(endpointsDir, 'all.jsonl'), toJsonl(all)),
+    writeFile(join(endpointsDir, 'alive.jsonl'), toJsonl(alive)),
+    writeFile(join(endpointsDir, 'rate-limited.jsonl'), toJsonl(rateLimited)),
     writeFile(join(byTierDir, 'official.jsonl'), toJsonl(official)),
     writeFile(join(byTierDir, 'reverse.jsonl'), toJsonl(reverse)),
     ...families.map((f) => writeFile(join(byFamilyDir, `${f}.jsonl`), toJsonl(byFamily[f]))),
@@ -124,12 +130,14 @@ export async function exportFiles(): Promise<void> {
       const safe = p.replace(/[^a-z0-9_-]+/gi, '_').toLowerCase();
       return writeFile(join(byProviderDir, `${safe}.jsonl`), toJsonl(byProvider[p]));
     }),
-    writeFile(join(dataDir, 'endpoints.json'), JSON.stringify(all, null, 2)),
+    writeFile(join(dataDir, 'endpoints.json'), JSON.stringify(alive, null, 2)),
     writeFile(join(dataDir, 'stats.json'), JSON.stringify(fullStats, null, 2)),
   ]);
 
   log.info('Export complete', {
     all: all.length,
+    alive: alive.length,
+    rate_limited: rateLimited.length,
     official: official.length,
     reverse: reverse.length,
     families: Object.fromEntries(families.map((f) => [f, byFamily[f].length])),

@@ -1,0 +1,49 @@
+{
+  "name": "brainpool",
+  "version": "0.1.0",
+  "description": "Global free AI API endpoint pool. Self-maintaining, aggregated, open.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "pipeline:scrape": "tsx src/pipeline-scrape.ts",
+    "pipeline:validate": "tsx src/pipeline-validate.ts",
+    "pipeline:merge": "tsx src/pipeline-merge.ts",
+    "build": "tsc",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.19.12",
+    "axios": "^1.7.0",
+    "better-sqlite3": "^11.0.0",
+    "hono": "^4.0.0",
+    "p-limit": "^6.0.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.0",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.5.0"
+  },
+  "keywords": [
+    "ai",
+    "llm",
+    "free-ai",
+    "openai-compatible",
+    "ai-api",
+    "ai-pool",
+    "gpt4free",
+    "openrouter",
+    "groq",
+    "claude",
+    "gemini",
+    "aggregator"
+  ],
+  "author": "CelestialBrain",
+  "license": "AGPL-3.0-only",
+  "private": true
+}

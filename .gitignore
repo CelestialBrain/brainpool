@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.log
+.env
+.env.local
+brainpool.db
+brainpool.db-shm
+brainpool.db-wal
+artifacts/
+.DS_Store

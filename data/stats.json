@@ -1,16 +1,20 @@
 {
-  "endpoint_count": 23,
-  "alive_count": 1,
-  "rate_limited_count": 0,
-  "avg_latency_ms": 847,
-  "avg_reliability_pct": 4.3,
+  "endpoint_count": 112,
+  "alive_count": 2,
+  "rate_limited_count": 2,
+  "avg_latency_ms": 753,
+  "avg_reliability_pct": 1.8,
   "by_family": [
     {
       "model_family": "other",
-      "alive_count": 1
+      "alive_count": 2
     }
   ],
   "by_provider": [
+    {
+      "provider": "bot:airforce-direct",
+      "alive_count": 1
+    },
     {
       "provider": "g4f:apiairforce",
       "alive_count": 1
@@ -19,21 +23,35 @@
   "by_tier": [
     {
       "tier": "reverse",
-      "alive_count": 1
+      "alive_count": 2
     }
   ],
-  "last_updated": 1776517351,
+  "last_updated": 1776518752,
   "source_quality": [
     {
       "source": "gpt4free-providers",
       "total": 11,
       "alive": 1,
-      "avg_latency_ms": 847,
+      "avg_latency_ms": 918,
       "alive_pct": 9.1
     },
     {
+      "source": "public-bots",
+      "total": 35,
+      "alive": 1,
+      "avg_latency_ms": 588,
+      "alive_pct": 2.9
+    },
+    {
+      "source": "hf-spaces",
+      "total": 40,
+      "alive": 0,
+      "avg_latency_ms": null,
+      "alive_pct": 0
+    },
+    {
       "source": "awesome-free-ai",
-      "total": 12,
+      "total": 26,
       "alive": 0,
       "avg_latency_ms": null,
       "alive_pct": 0

@@ -147,10 +147,24 @@ export async function routeChatCompletion(
   const requestedModel = opts.model ?? (openaiBody.model as string | undefined);
   const family = classifyFamily(requestedModel);
 
-  const candidates = queryEndpointInternal({
+  // Primary candidates: exact family match (if not 'other')
+  const primary = queryEndpointInternal({
     model_family: family !== 'other' ? family : undefined,
-    model_detected: requestedModel,
     limit: config.router.maxRetries * 3,
+  });
+
+  // Fallback candidates: universal gateways (family='other'), useful when
+  // a specific family has no alive endpoints but a gpt4free-style proxy
+  // accepts many models.
+  const fallback = family !== 'other'
+    ? queryEndpointInternal({ model_family: 'other', limit: config.router.maxRetries * 3 })
+    : [];
+
+  const seen = new Set<string>();
+  const candidates = [...primary, ...fallback].filter((e) => {
+    if (seen.has(e.endpoint_id)) return false;
+    seen.add(e.endpoint_id);
+    return true;
   });
 
   if (candidates.length === 0) {

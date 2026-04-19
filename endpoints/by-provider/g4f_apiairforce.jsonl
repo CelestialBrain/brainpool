@@ -1,1 +1,1 @@
-{"id":"2bc70c00722c40ba","base_url":"https://api.airforce/v1","api_kind":"openai","provider":"g4f:apiairforce","model_detected":null,"model_family":"other","latency_ms":682,"tier":"reverse","free_tier":false,"last_checked":1776615223,"reliability_pct":100}
+{"id":"2bc70c00722c40ba","base_url":"https://api.airforce/v1","api_kind":"openai","provider":"g4f:apiairforce","model_detected":null,"model_family":"other","latency_ms":762,"tier":"reverse","free_tier":false,"last_checked":1776616399,"reliability_pct":100}

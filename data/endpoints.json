@@ -1,28 +1,28 @@
 [
   {
-    "id": "c3bc424290241045",
-    "base_url": "https://api.airforce/v1",
-    "api_kind": "openai",
-    "provider": "bot:airforce-direct",
-    "model_detected": null,
-    "model_family": "other",
-    "latency_ms": 735,
-    "tier": "reverse",
-    "free_tier": false,
-    "last_checked": 1776697190,
-    "reliability_pct": 100
-  },
-  {
     "id": "2bc70c00722c40ba",
     "base_url": "https://api.airforce/v1",
     "api_kind": "openai",
     "provider": "g4f:apiairforce",
     "model_detected": null,
     "model_family": "other",
-    "latency_ms": 745,
+    "latency_ms": 441,
     "tier": "reverse",
     "free_tier": false,
-    "last_checked": 1776697188,
+    "last_checked": 1776699563,
+    "reliability_pct": 100
+  },
+  {
+    "id": "c3bc424290241045",
+    "base_url": "https://api.airforce/v1",
+    "api_kind": "openai",
+    "provider": "bot:airforce-direct",
+    "model_detected": null,
+    "model_family": "other",
+    "latency_ms": 704,
+    "tier": "reverse",
+    "free_tier": false,
+    "last_checked": 1776699560,
     "reliability_pct": 100
   }
 ]

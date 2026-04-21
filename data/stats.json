@@ -2,7 +2,7 @@
   "endpoint_count": 112,
   "alive_count": 2,
   "rate_limited_count": 2,
-  "avg_latency_ms": 601,
+  "avg_latency_ms": 831,
   "avg_reliability_pct": 1.8,
   "by_family": [
     {
@@ -26,20 +26,20 @@
       "alive_count": 2
     }
   ],
-  "last_updated": 1776769410,
+  "last_updated": 1776771801,
   "source_quality": [
     {
       "source": "gpt4free-providers",
       "total": 11,
       "alive": 1,
-      "avg_latency_ms": 484,
+      "avg_latency_ms": 765,
       "alive_pct": 9.1
     },
     {
       "source": "public-bots",
       "total": 35,
       "alive": 1,
-      "avg_latency_ms": 718,
+      "avg_latency_ms": 896,
       "alive_pct": 2.9
     },
     {

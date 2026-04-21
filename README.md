@@ -4,7 +4,7 @@
 ![Alive](https://img.shields.io/badge/alive-2-brightgreen)
 ![Endpoints](https://img.shields.io/badge/endpoints-112-blue)
 ![Rate Limited](https://img.shields.io/badge/rate--limited-2-orange)
-![Avg Latency](https://img.shields.io/badge/avg--latency-573ms-yellow)
+![Avg Latency](https://img.shields.io/badge/avg--latency-585ms-yellow)
 ![Reliability](https://img.shields.io/badge/reliability-1.8%25-purple)
 ![Updated](https://img.shields.io/badge/updated-2026--04--21-lightgrey)
 <!-- BADGES_END -->
@@ -145,9 +145,9 @@ The router translates between the OpenAI chat schema and the target upstream's s
 | Total endpoints | 112 |
 | Alive endpoints | 2 |
 | Rate-limited | 2 |
-| Avg latency | 573 ms |
+| Avg latency | 585 ms |
 | Avg reliability | 1.8% |
-| Last updated | 2026-04-21T19:46:52.000Z |
+| Last updated | 2026-04-21T20:20:51.000Z |
 <!-- STATS_END -->
 
 ---

@@ -6,10 +6,10 @@
     "provider": "bot:airforce-direct",
     "model_detected": null,
     "model_family": "other",
-    "latency_ms": 609,
+    "latency_ms": 683,
     "tier": "reverse",
     "free_tier": false,
-    "last_checked": 1776751356,
+    "last_checked": 1776754871,
     "reliability_pct": 100
   },
   {
@@ -19,10 +19,10 @@
     "provider": "g4f:apiairforce",
     "model_detected": null,
     "model_family": "other",
-    "latency_ms": 906,
+    "latency_ms": 830,
     "tier": "reverse",
     "free_tier": false,
-    "last_checked": 1776751364,
+    "last_checked": 1776754873,
     "reliability_pct": 100
   }
 ]

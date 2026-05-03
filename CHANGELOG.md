@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-05-03 15:45 UTC
+- Total alive: 1 (-1)
+- Rate-limited: 4
+- Avg latency: 825 ms
+- Avg reliability: 1.0%
+- Top families: other 1
+- Top providers: bot:airforce-direct 1
+
+
 ## 2026-05-03 14:48 UTC
 - Total alive: 2 (+0)
 - Rate-limited: 4

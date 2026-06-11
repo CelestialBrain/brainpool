@@ -3,10 +3,10 @@
 <!-- BADGES_START -->
 ![Alive](https://img.shields.io/badge/alive-0-brightgreen)
 ![Endpoints](https://img.shields.io/badge/endpoints-113-blue)
-![Rate Limited](https://img.shields.io/badge/rate--limited-3-orange)
+![Rate Limited](https://img.shields.io/badge/rate--limited-4-orange)
 ![Avg Latency](https://img.shields.io/badge/avg--latency-0ms-yellow)
 ![Reliability](https://img.shields.io/badge/reliability-0.0%25-purple)
-![Updated](https://img.shields.io/badge/updated-2026--06--10-lightgrey)
+![Updated](https://img.shields.io/badge/updated-2026--06--11-lightgrey)
 <!-- BADGES_END -->
 
 **Global free AI API endpoint pool. Self-maintaining, aggregated, open.**
@@ -144,10 +144,10 @@ The router translates between the OpenAI chat schema and the target upstream's s
 | --- | --- |
 | Total endpoints | 113 |
 | Alive endpoints | 0 |
-| Rate-limited | 3 |
+| Rate-limited | 4 |
 | Avg latency | 0 ms |
 | Avg reliability | 0.0% |
-| Last updated | 2026-06-10T23:51:41.000Z |
+| Last updated | 2026-06-11T00:53:12.000Z |
 <!-- STATS_END -->
 
 ---

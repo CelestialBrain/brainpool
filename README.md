@@ -147,7 +147,7 @@ The router translates between the OpenAI chat schema and the target upstream's s
 | Rate-limited | 3 |
 | Avg latency | 0 ms |
 | Avg reliability | 0.0% |
-| Last updated | 2026-06-18T21:11:29.000Z |
+| Last updated | 2026-06-18T22:03:13.000Z |
 <!-- STATS_END -->
 
 ---

@@ -1,13 +1,13 @@
 {
   "endpoint_count": 110,
   "alive_count": 0,
-  "rate_limited_count": 4,
+  "rate_limited_count": 5,
   "avg_latency_ms": 0,
   "avg_reliability_pct": 0,
   "by_family": [],
   "by_provider": [],
   "by_tier": [],
-  "last_updated": 1782585958,
+  "last_updated": 1782588741,
   "source_quality": [
     {
       "source": "public-bots",

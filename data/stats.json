@@ -1,5 +1,5 @@
 {
-  "endpoint_count": 110,
+  "endpoint_count": 100,
   "alive_count": 0,
   "rate_limited_count": 4,
   "avg_latency_ms": 0,
@@ -7,7 +7,7 @@
   "by_family": [],
   "by_provider": [],
   "by_tier": [],
-  "last_updated": 1782619311,
+  "last_updated": 1782625728,
   "source_quality": [
     {
       "source": "public-bots",
@@ -18,7 +18,7 @@
     },
     {
       "source": "hf-spaces",
-      "total": 40,
+      "total": 30,
       "alive": 0,
       "avg_latency_ms": null,
       "alive_pct": 0

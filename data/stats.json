@@ -1,5 +1,5 @@
 {
-  "endpoint_count": 110,
+  "endpoint_count": 104,
   "alive_count": 0,
   "rate_limited_count": 3,
   "avg_latency_ms": 0,
@@ -7,7 +7,7 @@
   "by_family": [],
   "by_provider": [],
   "by_tier": [],
-  "last_updated": 1783335495,
+  "last_updated": 1783340563,
   "source_quality": [
     {
       "source": "public-bots",
@@ -32,7 +32,7 @@
     },
     {
       "source": "awesome-free-ai",
-      "total": 26,
+      "total": 20,
       "alive": 0,
       "avg_latency_ms": null,
       "alive_pct": 0

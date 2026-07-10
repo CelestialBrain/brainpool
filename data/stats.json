@@ -1,5 +1,5 @@
 {
-  "endpoint_count": 110,
+  "endpoint_count": 109,
   "alive_count": 0,
   "rate_limited_count": 3,
   "avg_latency_ms": 0,
@@ -7,7 +7,7 @@
   "by_family": [],
   "by_provider": [],
   "by_tier": [],
-  "last_updated": 1783639762,
+  "last_updated": 1783641743,
   "source_quality": [
     {
       "source": "public-bots",
@@ -25,7 +25,7 @@
     },
     {
       "source": "gpt4free-providers",
-      "total": 9,
+      "total": 8,
       "alive": 0,
       "avg_latency_ms": null,
       "alive_pct": 0

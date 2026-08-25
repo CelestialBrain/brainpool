@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-08-25 11:32 UTC
+- Total alive: 1 (+0)
+- Rate-limited: 3
+- Avg latency: 1,105 ms
+- Avg reliability: 0.9%
+- Top families: other 1
+- Top providers: hf-space:elseodelasgalletas/gemma4-26b-a4b 1
+
+
 ## 2026-08-25 11:08 UTC
 - Total alive: 1 (+0)
 - Rate-limited: 3

@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-08-30 10:09 UTC
+- Total alive: 1 (+1)
+- Rate-limited: 3
+- Avg latency: 1,191 ms
+- Avg reliability: 0.9%
+- Top families: other 1
+- Top providers: hf-space:elseodelasgalletas/gemma4-e2b 1
+
+
 ## 2026-08-30 09:43 UTC
 - Total alive: 0 (+0)
 - Rate-limited: 3

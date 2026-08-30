@@ -6,10 +6,10 @@
     "provider": "hf-space:elseodelasgalletas/gemma4-e2b",
     "model_detected": null,
     "model_family": "other",
-    "latency_ms": 1191,
+    "latency_ms": 549,
     "tier": "reverse",
     "free_tier": false,
-    "last_checked": 1788084542,
+    "last_checked": 1788085528,
     "reliability_pct": 100
   }
 ]

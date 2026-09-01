@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-09-01 19:25 UTC
+- Total alive: 0 (-1)
+- Rate-limited: 3
+- Avg latency: 0 ms
+- Avg reliability: 0.0%
+- Top families: 
+- Top providers: 
+
+
 ## 2026-09-01 19:09 UTC
 - Total alive: 1 (+0)
 - Rate-limited: 3

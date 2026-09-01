@@ -1,11 +1,11 @@
 # Brainpool
 
 <!-- BADGES_START -->
-![Alive](https://img.shields.io/badge/alive-0-brightgreen)
+![Alive](https://img.shields.io/badge/alive-1-brightgreen)
 ![Endpoints](https://img.shields.io/badge/endpoints-107-blue)
 ![Rate Limited](https://img.shields.io/badge/rate--limited-3-orange)
-![Avg Latency](https://img.shields.io/badge/avg--latency-0ms-yellow)
-![Reliability](https://img.shields.io/badge/reliability-0.0%25-purple)
+![Avg Latency](https://img.shields.io/badge/avg--latency-1057ms-yellow)
+![Reliability](https://img.shields.io/badge/reliability-0.9%25-purple)
 ![Updated](https://img.shields.io/badge/updated-2026--09--01-lightgrey)
 <!-- BADGES_END -->
 
@@ -143,11 +143,11 @@ The router translates between the OpenAI chat schema and the target upstream's s
 | Metric | Value |
 | --- | --- |
 | Total endpoints | 107 |
-| Alive endpoints | 0 |
+| Alive endpoints | 1 |
 | Rate-limited | 3 |
-| Avg latency | 0 ms |
-| Avg reliability | 0.0% |
-| Last updated | 2026-09-01T11:26:35.000Z |
+| Avg latency | 1057 ms |
+| Avg reliability | 0.9% |
+| Last updated | 2026-09-01T11:42:59.000Z |
 <!-- STATS_END -->
 
 ---

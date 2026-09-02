@@ -1,36 +1,14 @@
 {
-  "endpoint_count": 107,
-  "alive_count": 1,
+  "endpoint_count": 67,
+  "alive_count": 0,
   "rate_limited_count": 3,
-  "avg_latency_ms": 659,
-  "avg_reliability_pct": 0.9,
-  "by_family": [
-    {
-      "model_family": "other",
-      "alive_count": 1
-    }
-  ],
-  "by_provider": [
-    {
-      "provider": "hf-space:elseodelasgalletas/gemma4-e2b-qat-mobile",
-      "alive_count": 1
-    }
-  ],
-  "by_tier": [
-    {
-      "tier": "reverse",
-      "alive_count": 1
-    }
-  ],
-  "last_updated": 1788376149,
+  "avg_latency_ms": 0,
+  "avg_reliability_pct": 0,
+  "by_family": [],
+  "by_provider": [],
+  "by_tier": [],
+  "last_updated": 1788377109,
   "source_quality": [
-    {
-      "source": "hf-spaces",
-      "total": 40,
-      "alive": 1,
-      "avg_latency_ms": 659,
-      "alive_pct": 2.5
-    },
     {
       "source": "public-bots",
       "total": 35,

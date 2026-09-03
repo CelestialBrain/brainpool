@@ -6,10 +6,10 @@
     "provider": "hf-space:elseodelasgalletas/gemma4-e2b-qat-mobile",
     "model_detected": null,
     "model_family": "other",
-    "latency_ms": 608,
+    "latency_ms": 546,
     "tier": "reverse",
     "free_tier": false,
-    "last_checked": 1788435775,
+    "last_checked": 1788437829,
     "reliability_pct": 100
   }
 ]

@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-09-04 09:26 UTC
+- Total alive: 1 (+0)
+- Rate-limited: 4
+- Avg latency: 700 ms
+- Avg reliability: 0.9%
+- Top families: other 1
+- Top providers: hf-space:elseodelasgalletas/gemma4-e2b-qat-mobile 1
+
+
 ## 2026-09-04 08:50 UTC
 - Total alive: 1 (+0)
 - Rate-limited: 3
